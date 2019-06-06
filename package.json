@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@google/clasp": "^2.1.0",
-    "@types/google-apps-script": "0.0.53"
+    "@types/google-apps-script": "0.0.53",
+    "eslint": "^5.16.0"
   }
 }
