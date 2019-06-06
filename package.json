@@ -1,5 +1,13 @@
 {
   "name": "AssertGAS",
+  "scripts": {
+    "start": "npm run watch",
+    "login": "clasp login",
+    "logout": "clasp logout",
+    "push": "clasp push",
+    "watch": "clasp push --watch",
+    "open": "clasp open"
+  },
   "devDependencies": {
     "@google/clasp": "^2.1.0",
     "@types/google-apps-script": "0.0.53"
