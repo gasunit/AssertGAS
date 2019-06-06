@@ -1,3 +1,6 @@
 {
-  "name": "AssertGAS"
+  "name": "AssertGAS",
+  "devDependencies": {
+    "@google/clasp": "^2.1.0"
+  }
 }
