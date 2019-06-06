@@ -6,7 +6,9 @@
     "logout": "clasp logout",
     "push": "clasp push",
     "watch": "clasp push --watch",
-    "open": "clasp open"
+    "open": "clasp open",
+    "lint": "eslint --ext .ts --ignore-path .gitignore src",
+    "fix": "eslint --fix --ext .ts --ignore-path .gitignore src"
   },
   "devDependencies": {
     "@google/clasp": "^2.1.0",
