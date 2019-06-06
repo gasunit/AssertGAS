@@ -1,8 +1,5 @@
 {
   "name": "AssertGAS",
-  "scripts": {
-    "create": "clasp create --type standalone --title AssertGAS --rootDir src"
-  },
   "devDependencies": {
     "@google/clasp": "^2.1.0",
     "@types/google-apps-script": "0.0.53"
