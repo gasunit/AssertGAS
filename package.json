@@ -2,6 +2,7 @@
   "name": "AssertGAS",
   "scripts": {
     "start": "npm run watch",
+    "test": "ts-mocha \"test/**/*.ts\"",
     "login": "clasp login",
     "logout": "clasp logout",
     "push": "clasp push",
