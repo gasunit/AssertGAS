@@ -9,6 +9,7 @@
     "open": "clasp open",
     "lint": "eslint --ext .ts --ignore-path .gitignore src",
     "fix": "eslint --fix --ext .ts --ignore-path .gitignore src",
+    "watch": "npm-run-all -p watch:*",
     "watch:push": "clasp push --watch",
     "watch:test": "ts-mocha --watch --watch-extensions ts \"test/**/*.ts\""
   },
