@@ -9,7 +9,8 @@
     "open": "clasp open",
     "lint": "eslint --ext .ts --ignore-path .gitignore src",
     "fix": "eslint --fix --ext .ts --ignore-path .gitignore src",
-    "watch:push": "clasp push --watch"
+    "watch:push": "clasp push --watch",
+    "watch:test": "ts-mocha --watch --watch-extensions ts \"test/**/*.ts\""
   },
   "devDependencies": {
     "@google/clasp": "^2.1.0",
