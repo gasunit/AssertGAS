@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-import Assert_ from '../../src/modules/Assert_'
+import Assert_ from '../src/Assert_'
 import assert = require('assert')
 
 describe('Assert_', () => {

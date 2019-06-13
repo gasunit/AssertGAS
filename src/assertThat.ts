@@ -1,4 +1,4 @@
-import Assert_ from './modules/Assert_'
+import Assert_ from './Assert_'
 
 // NOTE: Below function will be public in Google Apps Script.
 function assertThat (value: any) {
