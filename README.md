@@ -19,10 +19,12 @@ function test_array () {
     'Array': {
       '#indexOf()': {
         'should return -1 when not present': function () {
-          assertThat([1, 2, 3].indexOf(4)).is(-1)
+          var index = [1, 2, 3].indexOf(4)
+          assertThat(index).is(-1)
         },
         'should return the index when present': function () {
-          assertThat([1, 2, 3].indexOf(3)).is(2)
+          var index = [1, 2, 3].indexOf(3)
+          assertThat(index).is(2)
         }
       }
     }
@@ -88,4 +90,4 @@ assertThat(false).isFalse()
 ```
 
 ## Development
-see [package.json](package.json)
+See [package.json](package.json)
