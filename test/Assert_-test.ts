@@ -4,7 +4,7 @@ import Assert_ from '../src/Assert_'
 import assert = require('assert')
 
 describe('Assert_', () => {
-  const assertThat = (value: any) => new Assert_(value)
+  const assertThat: (any) => Assert_ = (value: any) => new Assert_(value)
 
   describe('#matches()', () => {
     describe('when value matches to callback function', () => {

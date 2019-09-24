@@ -6,61 +6,61 @@ class Assert_ {
     this.value = value
   }
 
-  matches (callback: Function) {
+  matches (callback: (value: any) => boolean): void {
     if (!callback(this.value)) {
       throw new Error(`${this.value} does not match to callback function`)
     }
   }
 
-  doesNotMatch (callback: Function) {
+  doesNotMatch (callback: (value: any) => boolean): void {
     if (callback(this.value)) {
       throw new Error(`${this.value} matches to callback function`)
     }
   }
 
-  is (expected: any) {
+  is (expected: any): void {
     if (this.value !== expected) {
       throw new Error(`${this.value} is not equal to ${expected}`)
     }
   }
 
-  isNot (expected: any) {
+  isNot (expected: any): void {
     if (this.value === expected) {
       throw new Error(`${this.value} is equal to ${expected}`)
     }
   }
 
-  isNull () {
+  isNull (): void {
     if (this.value !== null) {
       throw new Error(`${this.value} is not null`)
     }
   }
 
-  isNotNull () {
+  isNotNull (): void {
     if (this.value === null) {
       throw new Error(`${this.value} is null`)
     }
   }
 
-  isUndefined () {
+  isUndefined (): void {
     if (this.value !== undefined) {
       throw new Error(`${this.value} is not undefined`)
     }
   }
 
-  isNotUndefined () {
+  isNotUndefined (): void {
     if (this.value === undefined) {
       throw new Error(`${this.value} is undefined`)
     }
   }
 
-  isTrue () {
+  isTrue (): void {
     if (this.value !== true) {
       throw new Error(`${this.value} is not true`)
     }
   }
 
-  isFalse () {
+  isFalse (): void {
     if (this.value !== false) {
       throw new Error(`${this.value} is not false`)
     }
